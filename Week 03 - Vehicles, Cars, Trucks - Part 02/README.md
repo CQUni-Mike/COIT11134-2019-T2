@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-
 # COIT11134 - Inheritance Vehicles Cars Trucks
 
 The questions below are in addition to the set tutorial questions and to the questions from relevant chapters of the textbook.
@@ -13,20 +9,8 @@ I very highly recommend that all students work through these questions and refer
 
 Please make sure you attempt and work through the questions for yourself.  Don't fall into the trap of looking at the solutions and thinking "Oh, I could do that".  It is only by doing that you will learn.  :)
 
-* Question 1 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-02-Vehicles-Cars-Trucks
-
-* Question 2 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-03-Vehicles-Cars-Trucks
-
-* Question 3 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-04-Vehicles-Cars-Trucks
-
-* Question 4 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-05-Vehicles-Cars-Trucks
-
-* Question 5 solution:
-TBA
+* Question solutions see sub-folders here:
+https://github.com/CQUni-Mike/COIT11134-2019-T2
 
 
 ## Question 1: Inheritance Hierarchy of 3 Classes plus a Tester Class
