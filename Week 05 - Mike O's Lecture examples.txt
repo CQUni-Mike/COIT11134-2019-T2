@@ -1,0 +1,31 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 05
+
+******************************************************
+
+share.zoom.us
+	372 592 996
+	
+https://github.com/CQUni-Mike/COIT11134-Week-02-Vehicles-Cars-Trucks
+
+LAST WEEK:
+	GUI Dev.  Slap a GUI on it
+https://github.com/CQUni-Mike/COIT11134-Week-04-Vehicles-Cars-Trucks	
+
+THIS WEEK:
+
+
+
+4D. Assignment 1 spec says: "Wherever necessary, you need to use the inheritance and/or aggregation concept of OOD." We already have Inheritance (Vehicle, Car, Truck). Let's add Aggregation to cover all bases.
+
+Suggest adding a Manufacturer class: name field, and all of the usual constructors, setters / getters (Mutators / Accessors), toString. Update Vehicle class to include a Manufacturer object, and update constructors and toString(), and add settter and getter for Manufacturer.
+
+For each Vehicle, Car, Truck we add, user must also select a "Manufacturer" from a combobox, and this needs to be stored for each Vehicle.
+
+TODO: students to update Manufacturer class to include: location, phone number, email, web site, fields, with setters, getters, update the Consttructors and toString(). Update "Manufacturer" combobox to include name and location so user can select a manufacturer based on their location.
+
+
+
+EOF.

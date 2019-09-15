@@ -1,0 +1,360 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 06
+******************************************************
+
+share.zoom.us
+				Was:	4114695401
+	725 036 346
+
+Tute:
+	623 895 620
+
+Java HELP - Java Docs - in Windows Help Format 
+(CHM, searchable)	
+https://javadoc.allimant.org/
+
+
+LAST WEEK:
+More GUI Dev
+https://github.com/CQUni-Mike/COIT11134-Week-05-Vehicles-Cars-Trucks	
+
+THIS WEEK:
+W6.pptx
+Java Exception Handling
+
+
+
+Vehicle Car Truck
+Which class is responsible for each type of data ?
+Which class is responsible for validating each type of data ?
+
+Error messages
+console app - error messages go in the console window
+Windowed app -  error messages go in the dialog
+Web App - error messages go in HTML or similar in a web page
+
+
+Exception Handling
+
+try
+catch
+throw
+finally
+
+
+try
+{
+  int k = Integer.parseInt ("abc");
+}
+catch (NumberFormatException err)
+//catch (Exception err)
+{
+}
+
+if .....
+
+
+Unchecked
+You can catch them (try .. catch) if you want
+if you don't want to, and your program crashes, etc
+it's up to you as the programmer
+
+Checked
+There's specific commands in Java and if you use them
+Java forces you to use try .. catch ... or similar
+File I/O, Database I/O,
+Code will NOT compile until the exception(s) are handled
+
+
+try ::: catch
+
+method() throws ......
+
+
+try
+
+
+catch (NumberFormatException err)
+
+catch (ExceptionType2 err2)
+
+catch (ExceptionType3 err3)
+
+
+
+try
+
+catch (NumberFormatException | ExceptionType2 | ExceptionType3 err3)
+
+catch ()
+
+
+try
+
+
+catch (ParentException err)
+
+
+
+try
+{
+   int k = 10 / 0;
+}
+catch (ArithemticException err)
+{
+  // Display an error
+  // Set to safe values
+}
+
+int[] arr = new int [10];
+
+try
+{
+   int k = arr[10];
+}
+catch (ArratOutOfBoundsException err)
+{
+   
+}
+
+
+
+@Override
+public String toString()
+
+
+public String method1()
+
+::::
+
+@Override
+public String method1() throws ...  // NO !!!
+
+
+
+public String method1() throws FileIOException
+
+::::
+
+@Override
+public String method1() throws Exception // NO !!!
+
+
+
+
+
+try
+{
+   passengers = Integer.parseInt (passTF.getText() );
+   
+   if ((passengers < MIN_PASS) || (passengers > MAX_PASS))
+      throw new NumberFormatException ();
+}
+catch (NumberFormatException err)
+{
+   err.printStackTrace();
+   System.out.println (err.toString() );
+   System.out.println ("Error: passengers must be between "
+      + MIN_PASS + " and " + MAX_PASS);
+}
+
+
+
+public class CarException extends NumebrFormatException
+{
+
+
+}
+
+
+
+
+throw new FileFormatException ("Dude, you ran out of disk space");
+
+
+
+
+method1()
+   try
+     -> method2()
+        -> method3()  throws ....
+   catch
+   
+
+try
+{
+   openfile
+   readfile <--- 
+}
+catch (IOException err)
+{
+   
+}
+finally
+{
+   closefile
+}
+
+
+
+
+try
+{
+}
+catch
+{
+}
+finally 
+{
+   cleanup
+}
+
+try (File ....; 
+     Database ..... ;
+     
+{
+}
+catch
+{
+}
+
+
+
+public class ..... implements AutoClosable
+{
+   public void close() throws Exception
+   {
+      ::::;
+   }
+}
+
+
+
+
+*************************************
+Validation Strategy
+*************************************
+
+Tute:
+	623 895 620
+
+add()
+
+if error01
+   display error01
+else if error02
+   display error02
+else if error03
+   display error03
+:::::
+else
+{
+    // All OK
+    // create onjects, add to array lists, etc
+}
+
+
+boolean allOK = true; /// try and prove this wrong
+
+if error01
+   display error01
+   allOK = false
+
+if allOK == true AND error02
+   display error02
+   allOK = false
+
+if allOK == true AND error03
+   display error03
+   allOK = false
+
+if allOK == true
+   if radio1 
+   else if radio2
+   else
+      display error03
+      allOK = false
+if allOK == true
+	:::
+:::::
+if allOK == true
+{
+    // All OK
+}
+
+
+
+*********************************************
+
+NOTE: Must have DefaultCloseOperation set to: JFrame.DO_NOTHING_ON_CLOSE
+Otherwise the program will exit even if you click "No".
+
+      //setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation (JFrame.DO_NOTHING_ON_CLOSE);
+
+      // Setup my own "Window Closing" method that runs when the user
+      // clicks the "X" icon.  e.g. prompt user to confirm they want to exit,
+      // or prompt user to see if they want to save data, etc.
+      addWindowListener (new WindowAdapter()
+      {
+         public void windowClosing (WindowEvent e)
+         {
+            exitApplication ();
+         }
+      });
+
+
+   private void exitApplication ()
+   {
+      int result = JOptionPane.showConfirmDialog
+         (myGUI.this, "Exit the application ?",
+	 "Exit ?", JOptionPane.YES_NO_OPTION);
+
+      if (result == JOptionPane.YES_OPTION)
+      {
+         System.exit(0);  // Signal that program is terminatting normally.
+      }
+   }
+
+
+*********************************************
+// Search
+*********************************************
+
+Clear the textarea
+
+Dislay headings
+int count = 0;
+for (int k = 0; k < arrayList.size(); k++)
+{
+   //if (arrayList.get(k).getName().compareTo (name) == 0)
+   if (arrayList.get(k).getManufacturer().getName().compareTo (name) == 0)
+   {
+      append to the text area
+      count++
+      //k = arrayList.size(); // Exit loop
+   }
+}
+
+if count == 0
+      append "None found" to the text area
+  
+
+
+
+Date today = new Date();
+LocalDate date = LocalDate.of (2019, 08, 19);
+
+try
+
+Date date = new Date(new SimpleDateFormat ("DD/MM/YYYY") );
+
+catch
+
+
+if d1.compareTo(d2) <= 0 
+
+
+EOF.

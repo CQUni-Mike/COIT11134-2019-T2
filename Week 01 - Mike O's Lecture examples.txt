@@ -1,0 +1,239 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 01
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu
+******************************************************
+
+share.zoom.us
+714-316-493
+Sharing key: MGBVSD
+
+
+LAST WEEK:
+* Nil
+
+THIS WEEK:
+* GIT
+
+
+Create account:
+https://github.com/
+
+Download Git For Windows
+*** For Labs computers
+use the portable version)
+(right click and save)
+https://git-scm.com/download/win
+run exe to extract contents of 7z file
+double click on "git-cmd.exe" to open 
+git command line.
+c:\GIT\Portable Git\
+*** For your own machines download 
+non-portable version
+
+Step 3
+click "GitHub Classroom invitation link for Week 1 Tutorial URL" on course web page
+sign in to git
+authorise button, etc ??
+click "Accept this Assignment" button
+https://github.com/cquictcns/coit11134-2019-ht2-tutorial1-CQUni-Mike
+
+Click "Clone or Download" button
+
+git clone https://github.com/cquictcns/coit11134-2019-ht2-tutorial1-CQUni-Mike.git
+
+
+Step 4
+
+
+
+
+git clone https://github.com/CQUni-Mike/2019-T2.git
+
+git pull
+
+git status
+
+
+git add .
+
+git commit -m 'v1.07 changes'
+
+git push
+
+
+
+class Class2
+{
+}
+
+public class MyFirstClass
+{
+	public static final int MAX_CUSTOMERS = 100;
+
+	private int numCustomers;
+	private String customerName;
+
+class Class3
+{
+}
+
+	public int getNumberOfCustomers()
+
+}
+
+
+public class Employee
+{
+   private static int lastUsedId = 100;
+
+   private int id;
+   private String name;
+   private String address;
+   ::: // Dob
+    // Drivers
+    // AFP checks passed
+
+
+    // Default Constructor
+    public Employee ()
+    {
+        //id = 0;
+        //name = "";
+        this ("", "", false, false);
+
+    }
+
+    public Employee (String name)
+    {
+        //id = 0;
+        //name = "";
+        //dob = "unknown";
+        //afpChecksPassed = false;
+        //blueCardNumber  = false;
+        this (name, "", false, false);
+    }
+
+    // Not OK - Java doesn't know wjich to invoke
+    public Employee (String address)
+    {
+       ::::
+    }
+Employee mike = new Employee ("Mike O");
+Employee jane = new Employee ("123 Smith St");
+
+
+    public Employee (String name, String dob, boolean afpChecksPassed, String blueCardNumber)
+    {
+        lastUsedId++;
+        id = lastUsedId;
+        this.name = name;
+        this.dob = dob;
+        this.afpChecksPassed = afpChecksPassed;
+        this.blueCardNumber  = blueCardNumber;
+    }
+
+    public Employee (String name)
+    {
+        this.name = name;
+    }
+
+    public Employee (String n)
+    {
+        name = n;
+    }
+
+
+    public static String getEmpName (Employee e)
+    {
+       return e.name;
+    }
+
+    public static void methodX ()
+    {
+       Employee e new Employee();
+
+       :::::
+
+    }
+
+}
+
+Employee mike = new Employee (); // 101
+Employee jim  = new Employee (); // 101
+
+mike is an object of type Employee
+mike is an instance of Employee
+mike is an example of an Employee
+
+   private int id   = 100;
+   private String name = "unknown";
+
+
+Employee mike = new Employee ("Mike O");
+Employee jane = new Employee ("123 Smith St", "Rocky");
+
+Destructors
+~Employeee(mike);
+
+
+private final int MAX_STAFF = 3;
+
+Employee staff = new Employee [MAX_STAFF];
+
+for (int k = 0; k < MAX_STAFF; k++)
+   staff[k].raiseSalary (5);
+
+
+
+
+public classs Employee
+{
+   private static int id = 100;
+
+   private int id;
+
+   public Employee()
+   {
+      int id;
+      Employee.id++;
+      this.id = Employee.id;
+      id = 4;
+
+   }
+}
+
+
+Employee e1 = new Employee ("Mike O");
+Employee e2 = new Employee ("123 Smith St", "Rocky");
+
+if (e1 == e2) // compare memory adresses NOT the data
+
+
+
+GIT
+
+Each week, create a new GIT Repository
+COIT11134-Week01
+COIT11134-Week02
+etc
+
+Push all of your work up to the cloud
+
+Create a new GIT Repository for
+(Make sure it is a repository for YOUR account
+not a shared class account area)
+Ass 1, 2, ....
+COIT11134-Ass01
+and add, commit, and push your changes to
+the cloud each time you work on it.
+If harddrive crashes, etc - you have 
+your back-up in the cloud
+
+
+
+
+EOF.
+

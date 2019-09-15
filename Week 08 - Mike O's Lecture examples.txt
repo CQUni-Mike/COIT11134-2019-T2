@@ -1,0 +1,186 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 08
+CC: Venu
+******************************************************
+
+share.zoom.us
+	382 180	487
+	HJIEKJ
+
+https://www.youtube.com/watch?v=aXxYqgttAaE
+'Say hello, Hello, HELLO', The Three Stooges Famous Phone Answer
+
+LAST WEEK:
+W7.pptx:	Interfaces and Inner classes
+
+THIS WEEK:
+W8v2.pptx:	Generic Methods
+W9v2.pptx:	Generic Classes
+
+If you are writing code, copying pasting it, and changing a data type, STOP.
+
+
+
+int findMin (int, int, int)
+int findMin (int, int, int, int)
+
+// Elipsis
+int findMin (int ... array)
+
+findMin (1, 5)
+findMin (1, 5, 10, 4, -4)
+
+
+
+printMarks ("Hello", "Hello");
+
+Employee e1 = ....
+Employee e2 = ....
+
+printMarks (e1, e2);
+
+
+public static <T> printMarks (T a1, T a2)
+{
+}
+
+public static printMarks (Object a1, Object a2)
+
+
+double v = 4;
+double x = 5;
+
+printMarks (v, x); // OK
+
+Auto-Boxing
+
+double -> Double
+int -> Integer
+char -> Character
+
+
+Integer.parseInt ()....
+
+
+public static <T> printMarks (T a1, T a2)
+{
+   T value1 = a1;
+   T[] array = new T[10];
+   :::
+}
+
+min = 0
+
+find something smaller
+min = somethign in the data
+min = array[0];
+
+
+class ???? implements Comparable
+
+::::
+
+public static <T extends Comparable> .....
+
+
+
+*********************************
+
+class ???? implements Comparable, Serializable
+
+::::
+
+public static <T extends Comparable & Serializable> .....
+
+
+*********************************
+
+
+public int countNonBlankLines (ArrayList<T> ...)
+
+public int countNonBlankLines (TextArea ta)
+
+String[] lines = ta.split{"\n");
+
+
+ArrayList<T>
+::::
+
+
+
+Pair<String> myNames = new Pair ("Mike", "Fred");
+
+S.o.p (myNames.getSecond() );
+
+Pair<Employee> myStaff = new Pair 
+   (new Employee ("Mike", 100),
+    new Employee ("Fred", 200) );
+
+S.o.p (myStaff.getSecond() );
+Fred  100 	// if toString()
+Employee@5A6FE1;  // if no toString()
+
+// ERROR: must be same type
+Pair<Employee> myStaff = new Pair 
+   ("Mike", new Employee ("Fred", 200) );
+
+// OK: now have <T, U>
+Pair<Employee> myStaff = new Pair 
+   ("Mike", new Employee ("Fred", 200) );
+
+
+Pair<String> myNames = new Pair ("Mike", "Fred");
+
+S.o.p (myNames.getSecond() );
+
+Pair<Integer> myInts = new Pair (100, 200);
+
+S.o.p (myInts.getSecond() );
+
+
+Java 7:
+ArrayList<String> names = new ArrayList<String>();
+ArrayList<String> names = new ArrayList<>();
+
+// ERROR:
+if (myStaff instance of Pair<Employee>)
+
+// OK:
+if (myStaff.getFirst() instance of Employee)
+
+
+Mike's Java Wish List:
+* DatePicker
+* JSON
+* XML
+
+Singleton
+is a class you can only instantiated once
+
+
+public class XYZ
+{
+   static :::
+   static :::
+   static :::
+   static :::
+
+   public static ::::   
+   public static ::::   
+   public static ::::   
+   public static ::::   
+}
+
+// ERROR:
+if (myStaff instance of Pair<Employee>)
+
+So, how could we say:
+
+if (Pair<Manager> instance of Pair<Employee>)
+
+
+
+
+EOF.

@@ -1,0 +1,259 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 02
+https://moodle.cqu.edu.au/course/view.php?id=11737
+CC: Bernard Li (Bris ??)	b.li@cqu.edu.au
+******************************************************
+
+ZOOM:
+	share.zoom.us
+	491207635
+	OONVDS
+
+LAST WEEK:
+* GIT
+* Recap / Classes
+
+THIS WEEK:
+* Week 1: Circle GUI.
+* Inheritance
+* Week 2's tutorial - Vehicles -> Cars -> Trucks, ....
+is *THE* key question for this term.
+Array of objects - they can be Vehicles, Cars, Trucks
+and which methods get called depends on object type
+
+
+
+Objects / Classes
+
+Employee
+	name
+	dob
+	salary
+	raiseSalary()
+	calculateHolidays()
+	saveToFile()
+
+Student
+	id
+	dob
+	gpa
+	degree enrolled in
+	addGrade()
+	calculateGPA()
+	getResultSummary()
+
+
+Extremely reusable
+self contained
+Never need to re-invent the wheel
+Test classes in isolation and often automated 
+
+
+In the OLD days - before OOP:
+
+GUI
+	buttons
+	methods
+	stuff to deals with students
+	save student
+	calculate gpa
+	etc
+	everything including the kitchen sink
+
+Extremely difficult to re-use
+Maintenace Nightmare
+
+
+
+Inheritance
+
+base new classes on existing classes
+Building on whats been done before
+adding new new data types
+adding new operations / methods
+
+
+Employee
+
+Manager extend Employee
+	add the new stuff
+	yearlyBonus
+	KPI
+	setters / getters
+	getSalary() might include hourly rate + bonus
+
+
+Student
+	Distance / Int
+	Ungergrad / Postgrad
+	Part time / full time
+
+
+
+TextField 	
+-> ComboBox
+
+Employee
+	startDate
+	
+Employee mike = new Employee();
+
+IS-A
+mike IS-A Employee
+
+HAS-A
+mike HAS-A Date
+mike HAS-A String
+
+
+
+Employee: general purpose, handles all of the features
+common to ALL employees
+More general
+Superclass
+parent class
+high up the hierarchy
+
+Manager: is specific to managers. handles all of the features
+common to ALL managers
+More specific / more focused
+Subclass
+child class
+lower down the hierarchy
+
+
+@Override
+toString()
+
+public class Employee 
+{
+   ::::
+}
+
+Parent of ALL classes in Java is the Object
+
+Employee mike = new Employeee ();
+
+If Employee has no "toString" method:
+S.o.p (mike);
+S.o.p (mike.toString() );
+
+Employee@AF431VB
+
+Where is Java getting the "toString()" ????
+The Object class
+
+public class Employee 
+{
+   ::::
+
+   @Override
+   public String toString()
+   {
+   }
+}
+
+@Override
+Java does a whole lot of extra checking
+Makes sure there is a method in a super class
+that is public, called "toString", takes NO parameters
+and returns a String
+i.e. the finger prints are identical
+
+You can leave @Override out
+Optional
+
+But why ?
+@Override ghets Java to do a whole lot of extra
+checking for 1 little command
+
+
+class Template
+{
+   contants
+   instance data
+   
+   DC
+   PC's
+   
+   Getters / Accessors
+   Setters / Mutators
+   toString
+   :::
+   
+}
+
+If No "extends ..."
+Java automatically inserts "extends Object"
+into your compiled code
+
+
+Inheritance
+Build on what you have already done
+build on your existing classes
+build on ANY existing classes
+No reinventing the wheel
+No copy and paste of code, 
+no duplication of code
+
+Build on existing classes and add features, behaviour
+Very powerful
+
+
+***************************************
+*** Casting
+
+int k = 4.5; // Possible loss of precision
+
+int k = (int)4.5; // All OK :)
+
+double d = 4;
+
+float f = 4.3; // Possible loss of precision
+float f = 4.3f;  // All OK
+float f = (float)4.3;  // All OK
+
+
+if (x instanceof String)
+{
+   ...
+}
+
+
+Employee e1 = new Employee(:::);
+Manager e2 = new Manager(:::);
+Employee e3 = new Employee(:::);
+Employee e4 = new Employee(:::);
+
+e1 = (Employee) e2; // OK  Upcasting. OK :)
+e2 = (Manager) e1;  // Not OK. Downcasting. Not OK
+e3 = (Employee) e1; // OK
+
+if (e1 instanceof Manager)
+::::
+
+Polymorphism
+Many forms
+
+arraylist.add ("String");
+this.add (label);
+menubar.add (menu);
+
+
+arraylist.addStringToArrayList ("String");
+this.addGUIComponentToFrame (label);
+menubar.addMenuToMenuBar (menu);
+
+
+
+Employee e1 = new Employee(:::);
+Manager e2 = new Manager(:::);
+Employee e3 = new Employee(:::);
+Employee e4 = new Employee(:::);
+
+e1 = (Employee) e2; // OK  Upcasting. OK :)
+
+
+EOF.

@@ -1,0 +1,101 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 03
+https://moodle.cqu.edu.au/course/view.php?id=11737
+CC: Bernard Li (Bris ??)	b.li@cqu.edu.au
+******************************************************
+15 lect
+13 tute
+
+ZOOM:
+	share.zoom.us
+	448 637 819
+	CKYZSK
+	
+LAST WEEK:
+* Week 1: Circle GUI.
+* Inheritance
+* Week 2's tutorial - Vehicles -> Cars -> Trucks, ....
+is *THE* key question for this term.
+Array of objects - they can be Vehicles, Cars, Trucks
+and which methods get called depends on object type
+
+
+
+THIS WEEK:
+* ArrayList of Vehicles, Cars, Trucks, ....
+* Polymorphism
+* Abstract Classes
+
+
+Arrays can store one type of data
+
+Array of Vehicles, Cars, Trucks is still one type of data
+The cars, trucks, etc are decendants of the Vehicle class
+
+Many Forms
+Overloading - methods
+
+menu.add (menuitem)
+arraylist.add ("String");
+panel.add (myButton);
+
+
+Employee mike = new Employee();
+Employee fred = new Employee("Fred", 19.57);
+
+
+
+Abstract class called "XYZ"
+
+XYZ mike = new XYZ(); // ERROR
+cannot create instances
+
+
+for (Vehicle v : array)
+	S.o.p (v.toString() );
+
+for (int k = 0; k < array.length; k++)
+	S.o.p (arrray[k].toString() );
+
+
+Manager boss .... 
+Employee emp
+
+IS A
+	boss IS A Employee
+	boss IS A Manager
+	emp IS A Employee
+
+HAS A
+
+Employee
+	int Id
+	Date
+	CreditHistory
+
+Employee e = new Manager();
+e.setBonus (500); // ERROR
+
+if (e istanceof Manager)
+{
+	e.setBonus (500); // ERROR
+}
+
+if (e istanceof Manager)
+{
+	((Manager)e).setBonus (500); // OK
+}
+
+if (e istanceof Manager)
+{
+	Manager m = (Manager)e;
+	m.setBonus (500); // OK
+}
+
+
+
+
+EOF.
+

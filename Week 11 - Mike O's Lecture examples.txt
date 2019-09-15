@@ -1,0 +1,17 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 11
+https://moodle.cqu.edu.au/course/view.php?id=11737
+CC: Bernard Li (Bris ??)	b.li@cqu.edu.au
+******************************************************
+
+LAST WEEK:
+
+THIS WEEK:
+W11v2.pptx
+Stacks, Queues and Trees
+
+
+
+EOF.

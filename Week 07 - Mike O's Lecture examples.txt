@@ -1,0 +1,138 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 07
+
+******************************************************
+share.zoom.us
+	402-783-104
+	QZPUPF
+	
+LAST WEEK:
+W6.pptx
+Java Exception Handling
+try catch throw finally
+
+THIS WEEK:
+W7.pptx
+Interfaces and Inner classes
+
+Lect: 13 students
+
+
+What "Strange" / New / "Special" Classes have we seen so far ?
+
+Inheritance
+Aggregation
+Abstract
+Concrete
+
+
+abstract
+can have instance fields
+extends .... only 1 parent
+
+interface
+cannot have instance fields
+implements ... can implement 0, 1, 2, ... many
+
+
+Use your dot notation to pin things down.
+
+
+
+public class ....  
+{
+   {
+     CalcButtonListener listener = new CalcButtonListener ();
+     calcButton.addActionListener (listener);   
+   }
+   
+   class CalcButtonListener implements ActionListener
+   {
+       public void actionPerformed (....)
+       {
+         ::::
+       }
+   }
+}
+
+Now since J7:
+
+     calcButton.addActionListener (event -> calc() );  
+
+
+public class ....
+{
+.....
+
+   class CodeLookup
+   {
+      private descr;
+      private code;
+   }
+   
+   ArrayList<CodeLookup> codeLookup = new ArrayList<>();
+   
+   public void ...... ()
+   {
+   ....
+   	class ....
+	{
+	}
+
+   }
+}
+
+public class ....
+{
+
+}
+
+class ....
+{
+
+}
+
+
+
+Timer t = new Timer (1000, event -> showTime());
+t.start();
+
+public void showTime()
+{
+   System.out.println ("Time is: " + new Date() );
+   
+}
+
+
+Timer t = new Timer (1000, event -> 
+    {
+       System.out.println ("Time is: " + new Date() );
+    }
+    );
+t.start();
+t.stop();
+
+
+// Anonymous Label:
+
+add (button1);
+add (new JLabel ("   ") );
+add (button2);
+
+
+*****************************************
+*****************************************
+
+Tute #1:
+	share.zoom.us
+	681-766-311
+	TIPWJS
+	
+Tute #2:
+	share.zoom.us
+	285 674 002	
+
+
+EOF.

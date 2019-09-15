@@ -1,0 +1,84 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 04
+https://moodle.cqu.edu.au/course/view.php?id=13983	"Venu" Umapathy Venugopal, u.venugopal@cqu.edu.au, 93245789, Sydney
+******************************************************
+
+share.zoom.us
+	679-333-295
+	CMDDKJ
+	
+LAST WEEK:
+* ArrayList of Vehicles, Cars, Trucks, ....
+* Polymorphism
+* Abstract Classes
+* Extended Week 2's Vehicles, Cars, Trucks
+--> Used polymorphism to work out Total Truck Capacity, Average Number of Passengers per Car
+--> Changed Array to ArrayList
+
+
+THIS WEEK:
+
+* W4_5v2.pptx
+... 42 slides
+-> GUI Development and Event Handling - Part 1 + 2: JFrame, paint, lambda, events, listeners, layouts, JPanel, JTextField, JTextArea, JComboBox, JButton, JMenu with menus, bars, radiomenus, etc, JSlider, Dialog boxes, JCheckBox, JRadioButton
+
+* jhtp10_ch12.ppt
+... 230 slides
+-> GUI Components, Look and Feel, Dialogs, Swing overview, JFrame, JLabel with text and icons, tool tips, JPasswordField, char[] getPassword(), Listeners, JButton, RolloverIcon, JCheckBox, JRadioButton, JComboBox, etc
+
+* Email: slap a GUI on Vehicles, Cars, Trucks
+
+
+
+GUI Constructor
+	super ("My App v1.0");
+	
+
+myButton.addActionListener (event -> calculate() );
+
+myButton.adddActionListener (event -> System.out.println ("Hello") );
+
+
+
+yelloButton.addActionListener (new ColorAction (Color.YELLOW) );
+
+yelloButton.addActionListener (event -> setColor (Color.YELLOW) );
+
+private void setColor (Color col)
+{
+  myPanel.setBackground (col);
+}
+
+
+
+GridLayout
+
+BoxLayout
+GridBagLayout
+
+
+setLayout (new BorderLayout() );
+
+add (myLabel);
+add (myButton);
+
+
+Anonymous
+slide 26
+cannot make the button react to mouse click
+because we don't have a reference to it.
+We cannot say:
+myButton.addActionListener (event -> ......);
+
+Fine for prototypes / demos.
+
+
+pasteItem.addActionListener (event -> pasteData() );
+
+
+
+
+
+EOF.

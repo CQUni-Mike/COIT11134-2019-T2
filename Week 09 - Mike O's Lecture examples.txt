@@ -1,0 +1,31 @@
+******************************************************
+COIT11134 Object Oriented Programming (2019-T1)
+Mike O'Malley, m.omalley@cqu.edu.au
+Week 09
+https://moodle.cqu.edu.au/course/view.php?id=11737
+CC: Bernard Li (Bris ??)	b.li@cqu.edu.au
+******************************************************
+
+LAST WEEK:
+W8v2.pptx:	Generic Methods
+W9v2.pptx:	Generic Classes
+
+THIS WEEK:
+Vehicles, Cars, Trucks
+
+* Question 1 solution:
+https://github.com/CQUni-Mike/COIT11134-Week-02-Vehicles-Cars-Trucks
+
+* Question 2 solution:
+https://github.com/CQUni-Mike/COIT11134-Week-03-Vehicles-Cars-Trucks
+
+* Question 3 solution:
+https://github.com/CQUni-Mike/COIT11134-Week-04-Vehicles-Cars-Trucks
+
+* Question 4 solution:
+https://github.com/CQUni-Mike/COIT11134-Week-05-Vehicles-Cars-Trucks
+
+
+
+
+EOF.
