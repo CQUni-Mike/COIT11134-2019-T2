@@ -2,8 +2,8 @@
 COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 02
-https://moodle.cqu.edu.au/course/view.php?id=11737
-CC: Bernard Li (Bris ??)	b.li@cqu.edu.au
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 
 ZOOM:
@@ -48,7 +48,7 @@ Student
 Extremely reusable
 self contained
 Never need to re-invent the wheel
-Test classes in isolation and often automated 
+Test classes in isolation and often automated
 
 
 In the OLD days - before OOP:
@@ -92,12 +92,12 @@ Student
 
 
 
-TextField 	
+TextField
 -> ComboBox
 
 Employee
 	startDate
-	
+
 Employee mike = new Employee();
 
 IS-A
@@ -127,7 +127,7 @@ lower down the hierarchy
 @Override
 toString()
 
-public class Employee 
+public class Employee
 {
    ::::
 }
@@ -145,7 +145,7 @@ Employee@AF431VB
 Where is Java getting the "toString()" ????
 The Object class
 
-public class Employee 
+public class Employee
 {
    ::::
 
@@ -174,15 +174,15 @@ class Template
 {
    contants
    instance data
-   
+
    DC
    PC's
-   
+
    Getters / Accessors
    Setters / Mutators
    toString
    :::
-   
+
 }
 
 If No "extends ..."
@@ -195,7 +195,7 @@ Build on what you have already done
 build on your existing classes
 build on ANY existing classes
 No reinventing the wheel
-No copy and paste of code, 
+No copy and paste of code,
 no duplication of code
 
 Build on existing classes and add features, behaviour

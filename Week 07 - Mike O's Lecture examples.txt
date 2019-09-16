@@ -2,12 +2,13 @@
 COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 07
-
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 share.zoom.us
 	402-783-104
 	QZPUPF
-	
+
 LAST WEEK:
 W6.pptx
 Java Exception Handling
@@ -41,13 +42,13 @@ Use your dot notation to pin things down.
 
 
 
-public class ....  
+public class ....
 {
    {
      CalcButtonListener listener = new CalcButtonListener ();
-     calcButton.addActionListener (listener);   
+     calcButton.addActionListener (listener);
    }
-   
+
    class CalcButtonListener implements ActionListener
    {
        public void actionPerformed (....)
@@ -59,7 +60,7 @@ public class ....
 
 Now since J7:
 
-     calcButton.addActionListener (event -> calc() );  
+     calcButton.addActionListener (event -> calc() );
 
 
 public class ....
@@ -71,9 +72,9 @@ public class ....
       private descr;
       private code;
    }
-   
+
    ArrayList<CodeLookup> codeLookup = new ArrayList<>();
-   
+
    public void ...... ()
    {
    ....
@@ -102,11 +103,11 @@ t.start();
 public void showTime()
 {
    System.out.println ("Time is: " + new Date() );
-   
+
 }
 
 
-Timer t = new Timer (1000, event -> 
+Timer t = new Timer (1000, event ->
     {
        System.out.println ("Time is: " + new Date() );
     }
@@ -129,10 +130,10 @@ Tute #1:
 	share.zoom.us
 	681-766-311
 	TIPWJS
-	
+
 Tute #2:
 	share.zoom.us
-	285 674 002	
+	285 674 002
 
 
 EOF.

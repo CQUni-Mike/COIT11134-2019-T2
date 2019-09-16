@@ -2,8 +2,8 @@
 COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 03
-https://moodle.cqu.edu.au/course/view.php?id=11737
-CC: Bernard Li (Bris ??)	b.li@cqu.edu.au
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 15 lect
 13 tute
@@ -12,7 +12,7 @@ ZOOM:
 	share.zoom.us
 	448 637 819
 	CKYZSK
-	
+
 LAST WEEK:
 * Week 1: Circle GUI.
 * Inheritance
@@ -60,7 +60,7 @@ for (int k = 0; k < array.length; k++)
 	S.o.p (arrray[k].toString() );
 
 
-Manager boss .... 
+Manager boss ....
 Employee emp
 
 IS A

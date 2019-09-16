@@ -2,7 +2,8 @@
 COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 08
-CC: Venu
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 
 share.zoom.us
@@ -114,7 +115,7 @@ Pair<String> myNames = new Pair ("Mike", "Fred");
 
 S.o.p (myNames.getSecond() );
 
-Pair<Employee> myStaff = new Pair 
+Pair<Employee> myStaff = new Pair
    (new Employee ("Mike", 100),
     new Employee ("Fred", 200) );
 
@@ -123,11 +124,11 @@ Fred  100 	// if toString()
 Employee@5A6FE1;  // if no toString()
 
 // ERROR: must be same type
-Pair<Employee> myStaff = new Pair 
+Pair<Employee> myStaff = new Pair
    ("Mike", new Employee ("Fred", 200) );
 
 // OK: now have <T, U>
-Pair<Employee> myStaff = new Pair 
+Pair<Employee> myStaff = new Pair
    ("Mike", new Employee ("Fred", 200) );
 
 
@@ -167,10 +168,10 @@ public class XYZ
    static :::
    static :::
 
-   public static ::::   
-   public static ::::   
-   public static ::::   
-   public static ::::   
+   public static ::::
+   public static ::::
+   public static ::::
+   public static ::::
 }
 
 // ERROR:

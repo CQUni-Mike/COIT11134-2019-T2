@@ -2,6 +2,8 @@
 COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 06
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 
 share.zoom.us
@@ -11,14 +13,14 @@ share.zoom.us
 Tute:
 	623 895 620
 
-Java HELP - Java Docs - in Windows Help Format 
-(CHM, searchable)	
+Java HELP - Java Docs - in Windows Help Format
+(CHM, searchable)
 https://javadoc.allimant.org/
 
 
 LAST WEEK:
 More GUI Dev
-https://github.com/CQUni-Mike/COIT11134-Week-05-Vehicles-Cars-Trucks	
+https://github.com/CQUni-Mike/COIT11134-Week-05-Vehicles-Cars-Trucks
 
 THIS WEEK:
 W6.pptx
@@ -116,7 +118,7 @@ try
 }
 catch (ArratOutOfBoundsException err)
 {
-   
+
 }
 
 
@@ -148,7 +150,7 @@ public String method1() throws Exception // NO !!!
 try
 {
    passengers = Integer.parseInt (passTF.getText() );
-   
+
    if ((passengers < MIN_PASS) || (passengers > MAX_PASS))
       throw new NumberFormatException ();
 }
@@ -181,16 +183,16 @@ method1()
      -> method2()
         -> method3()  throws ....
    catch
-   
+
 
 try
 {
    openfile
-   readfile <--- 
+   readfile <---
 }
 catch (IOException err)
 {
-   
+
 }
 finally
 {
@@ -206,14 +208,14 @@ try
 catch
 {
 }
-finally 
+finally
 {
    cleanup
 }
 
-try (File ....; 
+try (File ....;
      Database ..... ;
-     
+
 {
 }
 catch
@@ -271,7 +273,7 @@ if allOK == true AND error03
    allOK = false
 
 if allOK == true
-   if radio1 
+   if radio1
    else if radio2
    else
       display error03
@@ -340,7 +342,7 @@ for (int k = 0; k < arrayList.size(); k++)
 
 if count == 0
       append "None found" to the text area
-  
+
 
 
 
@@ -354,7 +356,7 @@ Date date = new Date(new SimpleDateFormat ("DD/MM/YYYY") );
 catch
 
 
-if d1.compareTo(d2) <= 0 
+if d1.compareTo(d2) <= 0
 
 
 EOF.

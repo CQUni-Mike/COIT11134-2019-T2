@@ -2,13 +2,14 @@
 COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 04
-https://moodle.cqu.edu.au/course/view.php?id=13983	"Venu" Umapathy Venugopal, u.venugopal@cqu.edu.au, 93245789, Sydney
+https://moodle.cqu.edu.au/course/view.php?id=13983
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 
 share.zoom.us
 	679-333-295
 	CMDDKJ
-	
+
 LAST WEEK:
 * ArrayList of Vehicles, Cars, Trucks, ....
 * Polymorphism
@@ -34,7 +35,7 @@ THIS WEEK:
 
 GUI Constructor
 	super ("My App v1.0");
-	
+
 
 myButton.addActionListener (event -> calculate() );
 

@@ -3,7 +3,7 @@ COIT11134 Object Oriented Programming (2019-T1)
 Mike O'Malley, m.omalley@cqu.edu.au
 Week 01
 https://moodle.cqu.edu.au/course/view.php?id=13983
-CC: Venu
+CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 ******************************************************
 
 share.zoom.us
@@ -27,10 +27,10 @@ use the portable version)
 (right click and save)
 https://git-scm.com/download/win
 run exe to extract contents of 7z file
-double click on "git-cmd.exe" to open 
+double click on "git-cmd.exe" to open
 git command line.
 c:\GIT\Portable Git\
-*** For your own machines download 
+*** For your own machines download
 non-portable version
 
 Step 3
@@ -229,7 +229,7 @@ Ass 1, 2, ....
 COIT11134-Ass01
 and add, commit, and push your changes to
 the cloud each time you work on it.
-If harddrive crashes, etc - you have 
+If harddrive crashes, etc - you have
 your back-up in the cloud
 
 
