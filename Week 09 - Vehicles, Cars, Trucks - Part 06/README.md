@@ -575,20 +575,27 @@ for this week, and get extra practice doing questions from relevant chapters of 
 
 
 ## Question 5: File I/O, Delete, JTabbedPane, Searching, ....
-TBA
 
+### DONE:
 ??.	Make textarea readonly / display only.
 * **Hint:** setEditable().
-* Auto-create test data.
-* Search for vehicles for an entered manufacturer
-* display number of vehicles listed.
+
+??.	Auto-create test data.
+??.	Search for vehicles for an entered manufacturer
+??.	Display number of vehicles listed.
+??.	Add a demo JTabbedPane.
 
 
-.	Add a combobox to enable the user to select a Vehicle in the ArrayList
+### TODO:
+
+??.	Manufacturers: Add/Edit/Delete 
+??.	Manufacturers: save to file, load form file.
+
+??.	Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Delete" button which prompts the user to confirm the deletion and
 deletes the selected Vehicle from the ArrayList if the user confirms the deletion.
 
-??.	Add JTabbedPane and place all of the
+??.	JTabbedPane
 * Place all of the "Add" vehicle related functionality / components to it's own tab,
 * Place all of the "Delete" related functionality / components to it's own tab,
 * Place all of the "Display" related functionality / components to it's own tab,
