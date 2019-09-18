@@ -13,6 +13,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
+import java.io.*;
 
 public class VehicleGUI extends JFrame
 {
@@ -52,6 +53,9 @@ public class VehicleGUI extends JFrame
    JButton exitButton       = new JButton ("Exit");
    JButton testDataButton   = new JButton ("Test Data");
    JButton searchButton     = new JButton ("Search");
+   JButton fileReadButton   = new JButton ("File Read");
+   JButton fileWriteButton  = new JButton ("File Write");
+
 
    private ArrayList<Vehicle> vehicles = new ArrayList<Vehicle> ();
 
@@ -67,6 +71,47 @@ public class VehicleGUI extends JFrame
       setLocation (100, 100);
       setSize (600, 500);
       setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+
+
+      JTabbedPane pane = new JTabbedPane ();
+      pane.addTab ("Display",   null, createDisplayPanel (), "Tab 1 tool tip");
+      pane.addTab ("Tab2",      null, new JPanel (),         "Tab 2 tool tip");
+      pane.addTab ("Tab3",      null, new JPanel (),         "Tab 3 tool tip");
+
+      add (pane, BorderLayout.CENTER);
+
+
+      // Setup my own "Window Closing" method that runs when
+      // the user clicks the "X" icon.
+      addWindowListener (new WindowAdapter()
+      {
+         public void windowClosing (WindowEvent e)
+         {
+            exitApplication ();
+         }
+      });
+
+      clearInputs();
+
+
+      manufacturers.add (new Manufacturer ("Holden", "Adelaide", 2000));
+      manufacturers.add (new Manufacturer ("Ford",   "Geelong",  2500));
+      manufacturers.add (new Manufacturer ("Mazda",  "Adelaide", 1500));
+
+      for (int k = 0; k < manufacturers.size(); k++)
+      {
+         manufacturersComboBox.addItem (manufacturers.get(k).toString() );
+      }
+
+      //testData();
+      fileRead();
+      display("");
+
+	}
+
+   private JPanel createDisplayPanel ()
+   {
+	  JPanel displayPanel = new JPanel(new BorderLayout() );
 
       reportTextArea.setFont (new Font ("Courier New", Font.BOLD, 16) );
       reportTextArea.setEditable (false);
@@ -109,46 +154,28 @@ public class VehicleGUI extends JFrame
       buttonsPanel.add (addButton);
       buttonsPanel.add (displayButton);
       buttonsPanel.add (searchButton);
+      buttonsPanel.add (fileReadButton);
+      buttonsPanel.add (fileWriteButton);
       buttonsPanel.add (exitButton);
 
-      add (gridPanel,    BorderLayout.NORTH);
-      add (scrollPane,   BorderLayout.CENTER);
-      add (buttonsPanel, BorderLayout.SOUTH);
+      displayPanel.add (gridPanel,    BorderLayout.NORTH);
+      displayPanel.add (scrollPane,   BorderLayout.CENTER);
+      displayPanel.add (buttonsPanel, BorderLayout.SOUTH);
 
-      addButton.addActionListener      (event -> addVehicle() );
-      displayButton.addActionListener  (event -> display("") );
-      exitButton.addActionListener     (event -> exitApplication() );
-      testDataButton.addActionListener (event -> testData() );
-      searchButton.addActionListener   (event -> searchByManufacturer() );
+
+      addButton.addActionListener       (event -> addVehicle() );
+      displayButton.addActionListener   (event -> display("") );
+      exitButton.addActionListener      (event -> exitApplication() );
+      testDataButton.addActionListener  (event -> testData() );
+      searchButton.addActionListener    (event -> searchByManufacturer() );
+      fileReadButton.addActionListener  (event -> fileRead() );
+      fileWriteButton.addActionListener (event -> fileWrite() );
 
       vehicleRadioButton.addActionListener (event -> vehicleSelected() );
       carRadioButton.addActionListener     (event -> vehicleSelected() );
       truckRadioButton.addActionListener   (event -> vehicleSelected() );
 
-
-      // Setup my own "Window Closing" method that runs when
-      // the user clicks the "X" icon.
-      addWindowListener (new WindowAdapter()
-      {
-         public void windowClosing (WindowEvent e)
-         {
-            exitApplication ();
-         }
-      });
-
-      clearInputs();
-
-
-      manufacturers.add (new Manufacturer ("Holden", "Adelaide", 2000));
-      manufacturers.add (new Manufacturer ("Ford",   "Geelong",  2500));
-      manufacturers.add (new Manufacturer ("Mazda",  "Adelaide", 1500));
-
-      for (int k = 0; k < manufacturers.size(); k++)
-      {
-         manufacturersComboBox.addItem (manufacturers.get(k).toString() );
-      }
-
-      testData();
+      return displayPanel;
    }
 
    private void vehicleSelected()
@@ -443,34 +470,107 @@ public class VehicleGUI extends JFrame
           }
       }
    }
+   private void fileRead ()
+   {
+		String fileName = "file.txt";
+
+		vehicles.clear();
+
+		try
+		{
+			Scanner inFile = new Scanner(new FileReader(fileName));
+
+			while(inFile.hasNext()) // more data ?
+			{
+				// NOTE:
+				// The order you write the data needs to be exactly
+				// the same as the order in which read the data !!
+
+				String makeModel = inFile.nextLine();
+				String buildDate = inFile.nextLine();
+				double fuelEconomy = inFile.nextDouble();
+				//inFile.nextLine(); // Clear buffer (CRLF).
+
+			   //String name          = inFile.nextLine();
+			   //String address       = inFile.nextLine();
+			   //double buildCapacity = inFile.nextDouble();
+			    int manuIndex = inFile.nextInt();
+				inFile.nextLine(); // Clear buffer (CRLF).
+
+				 //Manufacturer m = new Manufacturer (name, address, buildCapacity);
+				  Manufacturer m = new Manufacturer  ();
+				  if (manuIndex >= 0)
+				 	 m = manufacturers.get(manuIndex);
+
+				//Vehicle v = new Vehicle (makeModel, buildDate, fuelEconomy, m);
+
+				Vehicle v = new Vehicle (makeModel, buildDate, fuelEconomy);
+				v.setManufacturer (m);
+
+				vehicles.add (v);
+			 }
+
+			 inFile.close();
+	   }
+	   catch(FileNotFoundException | NoSuchElementException ex)
+	   {
+		 System.out.println ("Error reading to file: " + fileName);
+		 System.exit(-1);
+	   }
+   }
+
+   private void fileWrite ()
+   {
+		String fileName = "file.txt";
+
+		try
+		{
+		 Formatter outputFile = new Formatter (fileName);
+
+		 for (int k = 0; k < vehicles.size (); k++)
+		 {
+			// NOTE:
+			// The order you write the data needs to be exactly
+			// the same as the order in which read the data !!
+
+			outputFile.format ("%s\n", vehicles.get (k).getModel () );
+			outputFile.format ("%s\n", vehicles.get (k).getBuildDate () );
+			outputFile.format ("%s\n", vehicles.get (k).getFuelEcon () );
+
+			//Manufacturer m = vehicles.get (k).getManufacturer ();
+			//outputFile.format ("%s\n", m.getName () );
+			//outputFile.format ("%s\n", m.getAddress () );
+			//outputFile.format ("%s\n", m.getBuildCapacity () );
+
+			int manuIndex = -1;
+			for (int m = 0; m < manufacturers.size(); m++)
+			{
+				if (manufacturers.get(m) == vehicles.get (k).getManufacturer ())
+				   manuIndex = m;
+			}
+			outputFile.format ("%s\n", manuIndex );
+		 }
+
+		 outputFile.close();
+
+		 System.out.println (vehicles.size () + " lines written to: " + fileName);
+		}
+		catch(FileNotFoundException ex)
+		{
+		 System.out.println  ("File not found: " + fileName);
+		 System.exit(-1);
+		}
+		catch(NoSuchElementException | FormatterClosedException ex)
+		{
+
+		 System.out.println ("Error writing to file: " + fileName);
+		 System.exit(-1);
+		}
+
+   }
 
    public static void main (String[] args)
    {
       VehicleGUI app = new VehicleGUI ();
    }
 }
-
-try
-{
-	Scanner inFile = new Scanner(new FileReader("file.txt"));
-
-	while(inFile.hasNext()) // more data ?
-	{
-		String field1 = inFile.nextLine();
-		String field2 = inFile.nextLine();
-		int    field3 = inFile.nextInt();
-		::: etc
-		Vehicle v = new Vehicle (???, ????, ????);
-		arraylist.add (v);
-	 }
-
-	 in.close();
-   }
-   catch(FileNotFoundException ex)
-   {
-	   ???
-   }
-   catch(NoSuchElementException ex)
-   {
-	   ???
-   }
