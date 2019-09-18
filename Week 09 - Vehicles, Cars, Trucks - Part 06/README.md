@@ -574,26 +574,35 @@ Add a *public static void toStringHeader()* method to your Vehicle class and inv
 for this week, and get extra practice doing questions from relevant chapters of the textbook.
 
 
+
 ## Question 5: File I/O, Delete, JTabbedPane, Searching, ....
 
 ### DONE:
-??.	Make textarea readonly / display only.
+5A.	Make textarea readonly / display only.
 * **Hint:** setEditable().
 
-??.	Auto-create test data.
-??.	Search for vehicles for an entered manufacturer
-??.	Display number of vehicles listed.
-??.	Add a demo JTabbedPane.
+5B.	Auto-create test data.
+
+5C.	Search for vehicles for an entered manufacturer
+
+5D.	Display number of vehicles listed.
+
+5E.	Add a demo JTabbedPane.
+
 
 
 ### TODO:
 
 ??.	Manufacturers: Add/Edit/Delete 
+
 ??.	Manufacturers: save to file, load form file.
 
-??.	Add a combobox to enable the user to select a Vehicle in the ArrayList
+??.	Vehicles Delete: Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Delete" button which prompts the user to confirm the deletion and
 deletes the selected Vehicle from the ArrayList if the user confirms the deletion.
+
+??.	Vehicles Edit: Add a combobox to enable the user to select a Vehicle in the ArrayList
+and a "Edit" button which allows you to edit any of the Vehicle details and save them.
 
 ??.	JTabbedPane
 * Place all of the "Add" vehicle related functionality / components to it's own tab,
@@ -648,4 +657,5 @@ and show you how to build simple Java applications.  See:
 
 * Mike's Java Software Development Tutorial Videos:
 http://tinyurl.com/MikesJavaVideos
->>>>>>> 929af2c9987c25be0a4988ea901ed5ba0fd38f6d
+
+.
