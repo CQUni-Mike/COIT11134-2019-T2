@@ -1,4 +1,4 @@
-# COIT11134 - Inheritance Vehicles Cars Trucks
+# COIT11134 - Inheritance Vehicles Cars Trucks (VCT) Project
 
 The questions below are in addition to the set tutorial questions and to the questions from relevant chapters of the textbook.
 
@@ -229,9 +229,7 @@ for this week, and get extra practice doing questions from relevant chapters of 
 
 
 ## Question 5: File I/O, Delete, Exception Handling and Validation, JTabbedPane, Design / Multi-Application / Cross Platform issues, ....
-TBA
 
-### DONE:
 5A.	Make textarea readonly / display only.
 * **Hint:** setEditable().
 
@@ -250,7 +248,7 @@ for this week, and get extra practice doing questions from relevant chapters of 
 
 
 
-## TODO:
+# TODO / FUTURE WORK:
 
 ??.	Vehicles Delete: Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Delete" button which prompts the user to confirm the deletion and
@@ -268,15 +266,15 @@ and a "Edit" button which allows you to edit any of the Vehicle details and save
 * Place all of the "Delete" related functionality / components to it's own tab,
 * Place all of the "Display" related functionality / components to it's own tab,
 
-* Each Vehicle, Car, Truck must be unique.
+???.	Each Vehicle, Car, Truck must be unique.
 * implement Comparable for Vehicle and search for Vehicle before adding it.
 
 
 ???.	Exception Handling and Validation.
-* When Vehicle data is validated, where should it be cheched ?  In which class ?
+* When Vehicle data is validated, where should it be checked ?  In which class ?
 i.e. Which class is responsible for handling / storing / processing Vehicle data ?
-* When Car data is validated, where should it be cheched ?  In which class ?
-* When Truck data is validated, where should it be cheched ?  In which class ?
+* When Car data is validated, where should it be checked ?  In which class ?
+* When Truck data is validated, where should it be checked ?  In which class ?
 * Change your "Add" button functionality, so that all validation processing occurs in the classes which are responsible the data.
 
 ??.	JTable - much nicer way to display your data than textareas !
