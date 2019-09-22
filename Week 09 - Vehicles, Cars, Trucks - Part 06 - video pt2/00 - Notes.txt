@@ -1,0 +1,22 @@
+Inheritance Vehicles Cars Trucks (VCT) Project
+
+Vehicles, Cars, Truck Project  - Part 06
+
+Start with the "Vehicles, Cars, Trucks - Part 05" code,
+and add:
+* File Write
+* File Read
+* Search
+* Convert ArrayList to Array
+
+YouTube:
+https://youtu.be/1YoYNhPdAVg
+
+Github source code:
+https://github.com/CQUni-Mike/COIT11134-2019-T2
+
+START: for the starting point code (as existed at the start of the video), see "Week 06 - Vehicles, Cars, Trucks - Part 05" folder.
+
+Part 1: for the code at the end of part 1 after file read, file write, search, etc are done,  see see "Week 09 - Vehicles, Cars, Trucks - Part 06 - video pt1" folder.
+
+Part 2: for the code at the end of the video, after the ArrayList to Array conversion, see "Week 09 - Vehicles, Cars, Trucks - Part 06 - video pt2" folder.
