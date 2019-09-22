@@ -4,16 +4,22 @@ Mike O'Malley, m.omalley@cqu.edu.au
 Week 05
 https://moodle.cqu.edu.au/course/view.php?id=13983
 CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
+Mike O'Malley's GitHub:      https://github.com/CQUni-Mike/COIT11134-2019-T2
+Mike O'Malley's Java Videos: http://tinyurl.com/MikesJavaVideos
 ******************************************************
 
 share.zoom.us
 	372 592 996
 
-https://github.com/CQUni-Mike/COIT11134-Week-02-Vehicles-Cars-Trucks
-
 LAST WEEK:
-	GUI Dev.  Slap a GUI on it
 https://github.com/CQUni-Mike/COIT11134-Week-04-Vehicles-Cars-Trucks
+* Vehicles, Cars, Trucks
+https://github.com/CQUni-Mike/COIT11134-2019-T2
+* Week 02 - Vehicles, Cars, Trucks - Part 01
+* Week 03 - Vehicles, Cars, Trucks - Part 02
+* Week 04 - Vehicles, Cars, Trucks - Part 03
+* Week 05 - Vehicles, Cars, Trucks - Part 04
+
 
 THIS WEEK:
 

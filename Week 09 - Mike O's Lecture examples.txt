@@ -4,6 +4,8 @@ Mike O'Malley, m.omalley@cqu.edu.au
 Week 09
 https://moodle.cqu.edu.au/course/view.php?id=13983
 CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
+Mike O'Malley's GitHub:      https://github.com/CQUni-Mike/COIT11134-2019-T2
+Mike O'Malley's Java Videos: http://tinyurl.com/MikesJavaVideos
 ******************************************************
 
 LAST WEEK:
@@ -11,21 +13,14 @@ W8v2.pptx:	Generic Methods
 W9v2.pptx:	Generic Classes
 
 THIS WEEK:
-Vehicles, Cars, Trucks
 
-* Question 1 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-02-Vehicles-Cars-Trucks
-
-* Question 2 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-03-Vehicles-Cars-Trucks
-
-* Question 3 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-04-Vehicles-Cars-Trucks
-
-* Question 4 solution:
-https://github.com/CQUni-Mike/COIT11134-Week-05-Vehicles-Cars-Trucks
-
-
-
+* Vehicles, Cars, Trucks
+https://github.com/CQUni-Mike/COIT11134-2019-T2
+* Week 02 - Vehicles, Cars, Trucks - Part 01
+* Week 03 - Vehicles, Cars, Trucks - Part 02
+* Week 04 - Vehicles, Cars, Trucks - Part 03
+* Week 05 - Vehicles, Cars, Trucks - Part 04
+* Week 06 - Vehicles, Cars, Trucks - Part 05
+* Week 09 - Vehicles, Cars, Trucks - Part 06
 
 EOF.
