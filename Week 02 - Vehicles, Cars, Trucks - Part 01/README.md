@@ -315,25 +315,24 @@ See:
 https://www.mediafire.com/file/dpk59wchfu715to/Mike_O%27s_Programming_Practice_Questions_-_v0.008.pdf/file
 
 Questions cover:
-```
-	Visualising data - a simple Bar Chart tool
-	Euler's number - e
-	Pi Calculator - Dart Board method
-	Google's Recruitment Billboard (2004) - Wanna Work for Google ??? (Expired)
-	Cable Car - Position and Velocity
-	Radioactive Decay of Thorium
-	Gravity: Planets, Stars, and Black Holes
-	Gravity: Escape Velocity and Event Horizons
-	Rocket Ship - Take Off and Landing
-	Space Race: 3 Spaceships to Alpha Centauri
-	Visualising Data - Interference Pattern
-	Factorials - Stirling's Approximation
-	Pi Calculator - Trapezoids and Circles
-	Trend Line by Method of Least Squares
-	Graph of Current in Circuit
-	Isothermal Metal Plate - Temperature Distribution in Metal Plate
-	And more !!!
-```
+* Visualising data - a simple Bar Chart tool
+* Euler's number - e
+* Pi Calculator - Dart Board method
+* Google's Recruitment Billboard (2004) - Wanna Work for Google ??? (Expired)
+* Cable Car - Position and Velocity
+* Radioactive Decay of Thorium
+* Gravity: Planets, Stars, and Black Holes
+* Gravity: Escape Velocity and Event Horizons
+* Rocket Ship - Take Off and Landing
+* Space Race: 3 Spaceships to Alpha Centauri
+* Visualising Data - Interference Pattern
+* Factorials - Stirling's Approximation
+* Pi Calculator - Trapezoids and Circles
+* Trend Line by Method of Least Squares
+* Graph of Current in Circuit
+* Isothermal Metal Plate - Temperature Distribution in Metal Plate
+* And more !!!
+
 
 # Need Help ?
 
