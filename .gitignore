@@ -13,3 +13,15 @@ Thumbs.db
 *.class
 *.bat
 
+*.*.pptx
+*.*.ppt
+*.*.docx
+*.*.doc
+*.*.xls
+*.*.xlsx
+*.*.zip
+*.*.jar
+*.*.7z
+
+*.*.class
+*.*.bat
