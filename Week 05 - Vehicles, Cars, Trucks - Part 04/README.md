@@ -244,10 +244,13 @@ TBA
 5E.	Add a demo JTabbedPane.
 
 5F.	Fix the Exit button (only exit if they click YES).
+
+5Z.	Homework: students please make sure you do all of the tutorial questions
+for this week, and get extra practice doing questions from relevant chapters of the textbook.
 
 
 
-### TODO:
+## TODO:
 
 ??.	Vehicles Delete: Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Delete" button which prompts the user to confirm the deletion and
@@ -300,9 +303,6 @@ Windows, Linux, Mac, Raspberry Pi, ....
 * All the GUI class should do is handle the GUI components and talk to the Controller to get the work done.
 * We can then re-use this Controller in Console apps, Web apps, etc.
 
-
-5Z.	Homework: students please make sure you do all of the tutorial questions
-for this week, and get extra practice doing questions from relevant chapters of the textbook.
 
 
 
