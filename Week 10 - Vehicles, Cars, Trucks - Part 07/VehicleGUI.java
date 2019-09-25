@@ -8,6 +8,10 @@ Description: Question 05.
 
 See "README.md" for question details.
 
+TODO
+* Save the manufacturers to file:
+* Load manufacturers from file (before loading Vehicles):
+
 */
 import java.awt.*;
 import java.awt.event.*;
@@ -56,6 +60,14 @@ public class VehicleGUI extends JFrame
    JButton fileReadButton   = new JButton ("File Read");
    JButton fileWriteButton  = new JButton ("File Write");
 
+	// Manufacturers Tab:
+	JLabel     manuNameLabel              = new JLabel ("Manufacturer Name: ");
+	JTextField manuNameTextField          = new JTextField ();
+	JLabel     manuAddressLabel           = new JLabel ("Manufacturer Address: ");
+	JTextField manuAddressTextField       = new JTextField ();
+	JLabel     manuBuildCapacityLabel     = new JLabel ("Building Capacity (vehicles/day): ");
+	JTextField manuBuildCapacityTextField = new JTextField ();
+	JButton addManufacturerButton          = new JButton ("Add");
 
    private ArrayList<Vehicle> vehicles = new ArrayList<Vehicle> ();
 
@@ -74,9 +86,8 @@ public class VehicleGUI extends JFrame
 
 
       JTabbedPane pane = new JTabbedPane ();
-      pane.addTab ("Display",   null, createDisplayPanel (), "Tab 1 tool tip");
-      pane.addTab ("Tab2",      null, new JPanel (),         "Tab 2 tool tip");
-      pane.addTab ("Tab3",      null, new JPanel (),         "Tab 3 tool tip");
+      pane.addTab ("Display",       null, createDisplayPanel (),      "Tab 1 tool tip");
+      pane.addTab ("Manufacturers", null, createManufacturerPanel (), "Tab 2 tool tip");
 
       add (pane, BorderLayout.CENTER);
 
@@ -177,6 +188,32 @@ public class VehicleGUI extends JFrame
 
       return displayPanel;
    }
+
+   private JPanel createManufacturerPanel ()
+   {
+      JPanel thePanel     = new JPanel (new BorderLayout() );
+      JPanel gridPanel    = new JPanel (new GridLayout (3, 2) );//R,C
+	  JPanel buttonsPanel = new JPanel (new FlowLayout (FlowLayout.CENTER) );
+
+
+	   gridPanel.add (manuNameLabel);
+	   gridPanel.add (manuNameTextField);
+	   gridPanel.add (manuAddressLabel);
+	   gridPanel.add (manuAddressTextField);
+	   gridPanel.add (manuBuildCapacityLabel);
+	   gridPanel.add (manuBuildCapacityTextField);
+
+		buttonsPanel.add (addManufacturerButton);
+
+	   thePanel.add (gridPanel,     BorderLayout.NORTH);
+	   thePanel.add (new JLabel (), BorderLayout.CENTER);
+	   thePanel.add (buttonsPanel,  BorderLayout.SOUTH);
+
+	   addManufacturerButton.addActionListener (event -> addManufacturer () );
+
+      return thePanel;
+   }
+
 
    private void vehicleSelected()
    {
@@ -472,6 +509,9 @@ public class VehicleGUI extends JFrame
    }
    private void fileRead ()
    {
+		// TODO
+		// * Load manufacturers from file (before loading Vehicles):
+
 		String fileName = "file.txt";
 
 		vehicles.clear();
@@ -566,6 +606,36 @@ public class VehicleGUI extends JFrame
 		 System.out.println ("Error writing to file: " + fileName);
 		 System.exit(-1);
 		}
+
+   }
+
+
+   private void addManufacturer ()
+   {
+		String name = manuNameTextField.getText ();
+		String address = manuAddressTextField.getText ();
+		double buildCap = Double.parseDouble (manuBuildCapacityTextField.getText () );
+
+		// For simplicity: assume inputs all OK
+		// But for real app or assignment, you need to validate all.
+		Manufacturer m = new Manufacturer (name, address, buildCap);
+
+		// Add new Manufacturer to the ArrayList.
+		manufacturers.add (m);
+
+		// Sort the Manufacturers
+		//Collections.sort (manufacturers);
+
+		// Refresh the Manufacturers combobox
+		manufacturersComboBox.removeAllItems();
+		for (int k = 0; k < manufacturers.size(); k++)
+		{
+			manufacturersComboBox.addItem
+			   ((String) manufacturers.get(k).toString() );
+		}
+
+		// TODO
+		// * Save the manufacturers to file:
 
    }
 
