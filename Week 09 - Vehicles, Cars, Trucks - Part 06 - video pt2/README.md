@@ -242,36 +242,51 @@ Only a few things covered ... because students have an assignment due this week.
 
 ## Question 6: File I/O, Search, JTabbedPane, etc
 
-6A.	Make textarea readonly / display only.
+6A.	Fix some issues with prior code (Question 5).
+
+6B.	File I/O: File Save button to write vehicles out to file and a File Load button to load vehicles in from file.
+
+6C.	Search: add a Search button to search for vehicles for an entered manufacturer.
+
+6D.	YouTube video only: Convert ArrayList to Array.
+
+6E.	Make textarea readonly / display only.
 * **Hint:** setEditable().
 
-6B.	Auto-create test data when application starts-up.
+6F.	Auto-create test data when application starts-up.
 
-6C.	Search for vehicles for an entered manufacturer.
+6G.	Display number of vehicles listed.
 
-6D.	Display number of vehicles listed.
+6H.	Add a demo JTabbedPane.
 
-6E.	Add a demo JTabbedPane.
-
-6F.	Fix the Exit button (only exit if they click YES).
+6I.	Fix the Exit button (only exit if they click YES).
 
 6Z.	Homework: students please make sure you do all of the tutorial questions
 for this week, and get extra practice doing questions from relevant chapters of the textbook.
 
 
+## Question 7: JTabbed Pane, Add Manufacturer
+
+7A.	Add a Manufacturer tab with suitable labels and input fields.  Add an "Add" button.  
+When the user clicks the "Add" button, the inputs are validated (no blank inputs allowed), and if all are OK, 
+add the Manufacturer to the ArrayList of Manufacturers and refresh the Manufacturer combobox on the main tab.
+
+
 
 # TODO / FUTURE WORK: Delete, Exception Handling and Validation, Design / Multi-Application / Cross Platform issues, ....
 
+??.	Auto-save to file when application exists and auto-load data when application starts up.
+
 ??. 	Manufactuters: Don't hard-code Manufactuters - read them from file and save to file as well.
 
-??.	Vehicles Delete: Add a combobox to enable the user to select a Vehicle in the ArrayList
+??.	Vehicle Delete: Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Delete" button which prompts the user to confirm the deletion and
 deletes the selected Vehicle from the ArrayList if the user confirms the deletion.
 
-??.	Vehicles Edit: Add a combobox to enable the user to select a Vehicle in the ArrayList
+??.	Vehicle Edit: Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Edit" button which allows you to edit any of the Vehicle details and save them.
 
-??.	Manufacturers: Add/Edit/Delete
+??.	Manufacturers: Edit/Delete
 
 ??.	Manufacturers: save to file, load form file.
 
@@ -282,7 +297,6 @@ and a "Edit" button which allows you to edit any of the Vehicle details and save
 
 ???.	Each Vehicle, Car, Truck must be unique.
 * implement Comparable for Vehicle and search for Vehicle before adding it.
-
 
 ???.	Exception Handling and Validation.
 * When Vehicle data is validated, where should it be checked ?  In which class ?
@@ -309,8 +323,7 @@ Windows, Linux, Mac, Raspberry Pi, ....
 * Why repeat all of that business logic in multiple places ?
 * This would result in the same code being duplicated in many places ... a MAINTENANCE DISASTER.
 
-* Solution:
-* Model View Controller (MVC) design
+* One Solution: **Model View Controller (MVC)** design
 * Add another class: the Controller, which contains all of the business logic.
 * All the GUI class should do is handle the GUI components and talk to the Controller to get the work done.
 * We can then re-use this Controller in Console apps, Web apps, etc.

@@ -265,6 +265,13 @@ Only a few things covered ... because students have an assignment due this week.
 for this week, and get extra practice doing questions from relevant chapters of the textbook.
 
 
+## Question 7: JTabbed Pane, Add Manufacturer
+
+7A.	Add a Manufacturer tab with suitable labels and input fields.  Add an "Add" button.  
+When the user clicks the "Add" button, the inputs are validated (no blank inputs allowed), and if all are OK, 
+add the Manufacturer to the ArrayList of Manufacturers and refresh the Manufacturer combobox on the main tab.
+
+
 
 # TODO / FUTURE WORK: Delete, Exception Handling and Validation, Design / Multi-Application / Cross Platform issues, ....
 
@@ -279,7 +286,7 @@ deletes the selected Vehicle from the ArrayList if the user confirms the deletio
 ??.	Vehicle Edit: Add a combobox to enable the user to select a Vehicle in the ArrayList
 and a "Edit" button which allows you to edit any of the Vehicle details and save them.
 
-??.	Manufacturers: Add/Edit/Delete
+??.	Manufacturers: Edit/Delete
 
 ??.	Manufacturers: save to file, load form file.
 
