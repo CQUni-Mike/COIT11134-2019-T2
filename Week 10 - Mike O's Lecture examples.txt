@@ -8,6 +8,9 @@ Mike O'Malley's GitHub:      https://github.com/CQUni-Mike/COIT11134-2019-T2
 Mike O'Malley's Java Videos: http://tinyurl.com/MikesJavaVideos
 ******************************************************
 
+share.zoom.us
+	346 256 898
+	
 LAST WEEK:
 
 THIS WEEK:
@@ -21,6 +24,129 @@ SearchandSort.ppt:	Searching, Sorting and Big O
 W11v2.pptx
 Stacks, Queues and Trees
 (14)
+
+
+Array
+ArrayList
+Collection
+
+Collections.sort (nameList);
+Collections.sort (empList, Employee::getName()); // Check syntax
+
+LinkedList
+Stacks
+Queues
+Trees
+
+
+LinkedList
+
+
+
+double max = 100;
+double min = 0;
+
+
+
+class ..... implements Comparable
+{
+    public int compareTo (Object obj)
+    {
+       :::
+       
+    {
+}
+
+Collection.sort (myArrayList, Collections.CASE_INSENSITIVE);
+
+
+
+Linear Search
+double the data -> double the time
+
+Binary Search
+Data must be sorted
+
+
+    V  V   V        V
+5  55 109 113  120 135 199 250  400 599
+
+double the data -> very small increase in time
+
+If data changes relatively rarely, and you are searching often
+=> Binary Search
+
+
+Big O
+
+measure of efficiency
+
+If something has linear efficiency O(n).  e.g. linear search
+If some has quadratic efficiency O(n^2).  e.g. Bubble Sort
+Merge Sort O(nlogn)
+
+
+public class CustomerException extends ArithmeticException
+{
+    public CustomerException ()
+    {
+        super();
+    }
+   
+    public CustomerException (String errorMessage)
+    {
+        super(errorMessage);
+    }
+}
+
+if (name is blank)
+   throw new CustomerException ("Error: name cannot be blank");
+   
+try
+{
+}
+catch CustomerException
+   display dialog try again
+   
+catch Exception
+
+
+
+Date today = new Date ();
+
+
+   // Get Date from String
+   // Example use:
+   //    Date dateOfBirth = Moose_Utils.toDate ("4/10/1950", "dd/MM/yyyy");
+   //    Date date        = Moose_Utils.toDate ("Mon, 29-Jul-2019", "EEE, dd-MMM-yyyy");
+   //
+   // Some sample formats:  NOTE: These are CASE Sensitive !!!!!
+   //    "dd/MM/yyyy"    "dd-MM-yyyy"   "yyyy-MM-dd hh:mm:ss a"
+   //    "yyyy-MM-dd"
+   //    "EEE, dd-MMM-yyyy"
+   // "YYYY-MM-DD" - does NOT work - these are CASE Sensitive !!!!!
+   public static Date toDate (String dateStr, String dateFormatStr)
+   {
+      SimpleDateFormat dateFormat = new SimpleDateFormat(dateFormatStr);
+      Date   date = new Date();
+
+      if ((dateStr != null) && (dateStr.length() > 1))
+      {
+         try
+         {
+            date = dateFormat.parse (dateStr);
+         }
+         catch (IllegalArgumentException | ParseException err)
+         {
+            System.out.println ("toDate(): Error: '" + dateStr +
+                 "' is not a valid '" + dateFormatStr + "' date.");
+            date = null;
+         }
+      }
+
+      return date;
+   }
+
 
 
 
