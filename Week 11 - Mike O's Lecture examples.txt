@@ -7,13 +7,132 @@ CC: Venu (Umapathy Venugopal), u.venugopal@cqu.edu.au, Phone: 93245789, Sydney
 Mike O'Malley's GitHub:      https://github.com/CQUni-Mike/COIT11134-2019-T2
 Mike O'Malley's Java Videos: http://tinyurl.com/MikesJavaVideos
 ******************************************************
+10
+
+ZOOM:
+	480 595 208
 
 LAST WEEK:
+* W10v2.pptx:	LinkedLists and Algorithms
+23
+* Files.ppt:	Files, Streams (Not done: Object Serialization)
+37
+* SearchandSort.ppt:	Searching, Sorting and Big O
+21
 
 THIS WEEK:
-W11v2.pptx
-Stacks, Queues and Trees
+* W11v2.pptx	Stacks, Queues and Trees
 (14)
+
+NEXT WEEK: Week 12
+* Past exams - please read / work through most recent past exam before next week's classes.  (Do more past exams if you can)
+* No solutions given.
+* My last week - if you need help after Week 12's classes, please contact CC: Venu.
+* Past exams are not assessment - work together, study groups, swap attempts at questions and compare and decide which is best.
+
+Exam hints:
+* Read the Question
+
+
+* Array like a linked list
+
+0 Node1
+1 Node2
+         <----- 
+2 Node3
+3 null
+
+insert a node between indexes 1 and 2:
+
+
+0 Node1
+1 Node2
+2 new data
+3 Node3
+4 null
+
+
+ArrayList
+insert
+
+
+Stack
+LIFO
+
+Array like a Stack
+
+0 Node1
+1 Node2
+2 Node3
+3 null
+
+0 Node1
+1 Node2
+2 Node3
+3 new data
+4 null
+
+0 Node1
+1 Node2
+2 Node3
+3 null
+
+
+LinkList
+Stack
+Queue
+ArrayList
+
+add
+delete / remove
+methods all the same / mostly the same
+so changing from the one to the other is really easy.
+
+
+
+First Node
+     MyData
+     --->>>>    second node
+                nodes data
+                  --->>>>>    third node
+                              node data  
+                               --->>>>>  null
+                               
+LIFO
+
+
+
+Stack<String> myStack = new Stack<String>();
+
+myStack.add ("Mike"); // NO
+myStack.push ("Mike"); // add
+
+String name = myStack.pop (); // Get data and remove from Stack
+
+String name = myStack.peek (); // Get datat
+
+Collections
+Iterators
+
+
+Queue
+FIFO
+
+Queue<Employee> myQuene = new Queue<Employee> (); // NO
+
+Got top tell Java what type of Queue
+
+
+Circular Memory / Circular Array
+
+
+Tree BTree
+
+       50
+      /   \
+     5
+   /  \ 
+  3    25
 
 
 EOF.
