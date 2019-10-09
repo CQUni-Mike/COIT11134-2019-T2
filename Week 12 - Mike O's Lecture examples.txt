@@ -8,6 +8,9 @@ Mike O'Malley's GitHub:      https://github.com/CQUni-Mike/COIT11134-2019-T2
 Mike O'Malley's Java Videos: http://tinyurl.com/MikesJavaVideos
 ******************************************************
 
+Zoom:
+	538 575 597
+
 LAST WEEK:
 * W11v2.pptx	Stacks, Queues and Trees
 
@@ -21,8 +24,245 @@ THIS WEEK: Week 12 – Final Revision
 Exam hints:
 * Read the Question
 * Highlight / circle keywords, 
+* Get practice writing code on paper
+* Ditto is fine
+
+
+if (monday is true)
+::::
+else if (tuesday is true)
+:: etc for the other days of the week
+
+if (input > 0)
+else if (input < 20)
+else if (input < 30)
+fill in all cases
+
 
 2018-T2 - COIT11134_STD_T218.pdf
 2018-T1 - T118COIT11134stdV5.pdf
+
+
+*************************************
+2018-T2 - COIT11134_STD_T218.pdf
+
+Q2
+
+public class Circle extends Shape
+{
+  private double radius;
+  
+  public double calculateArea()
+  {
+    ///
+  }
+  
+  public String toString()
+  {
+     // return the output
+  }
+}
+
+
+Q3a
+What is the difference between a cat and a dog
+
+Comprare and Contrast cat and a dog
+
+
+              Dog    Cat
+Sharp Claws    N      Y
+
+Cat has sharp claws, tear flesh. hold prey
+
+Dog bark, cats meow
+
+Dog are always happy.  Cats tend to moody.
+
+
+Examples
+
+
+Static Vs Instance Data
+Abstract Vs Concrete
+Abstract Vs Super class
+Abstract Vs Interface class
+	extend
+	implements
+Primitive Vs Reference
+Overload Vs Oberride
+Overload Vs Polymorphism
+Can a Java object be created if the class does not have a constructor ?
+
+
+Primitive
+* basic types: int, boolean
+
+Reference:
+* Start with a capital letter (Java std)
+* More complex types
+
+
+Employee mike = new Employee ();
+
+
+10 6
+
+10 <tab> 6
+
+
+private int inc (int val)
+{
+   return val++;
+}
+
+int age = 30;
+
+S.o.p (inc (age) + " " + age );  // 31 30
+
+
+
+Q5
+
+JButton ....
+JComboBox<String> ....
+
+jcbCity.addItem (....);
+:::
+
+guiFrame.add ( ....);
+guiFrame.add ( ....);
+
+
+S.o.p (mike.getString());
+Hash
+
+
+public ??? void ?? print (???[] ????)
+{
+    for (......; .... .length
+       S.o.p ();
+}
+
+
+LinkedList<?????> evenList = new LinkedList<????>();
+
+for (int k = 0; k < .... length; k++)
+{
+   if (????[k] % 2 == 0)
+      // add it to the list
+}
+
+
+Q1
+
+public ????? class Shape
+{
+	public ??? abstract ??? double area()
+	{
+	 /// ???
+	}
+	
+	??? abstract ??? double perimiter()  ???
+	
+	// OR ???
+	public double perimiter() ???
+}
+
+public class Square extends Shape
+{
+   
+}
+
+
+public class Tester
+{
+   public static void main (String[] args)
+   {
+      
+   }
+}
+
+
+// Here's the code:
+
+Shape[] shapes = new Shape[3];
+
+shapes[0] = new Square ......
+shapes[1] = new Rectangle ......
+......
+
+
+for (........)
+   S.o.p ("Area = " + shapes[???].area() .....);
+
+
+Q3
+
+try
+{
+	Scanner in = new Scanner (new FileReader ("////));
+	Formatter out = new Formatter (".....");
+
+	while (in.hasNext())
+	{
+	   String id = in.
+	   double result = in.
+
+	   if ......
+	   else if .....
+	   else if ....   // No Ditto here
+
+	   out.format ("%s %s %s", id, result, grade);
+
+
+	}
+
+	in.close();
+	out.close();
+}
+catch (Exception err)
+{
+   S.o.p ("File read or write error");
+}
+
+
+if (name.equals ("end") == true)
+
+
+*********************************************
+*********************************************
+*********************************************
+Tutorial
+*********************************************
+
+ZOOM:
+	992 390 708
+
+
+A farmer had 9 sheep.  All but 4 died.
+How many are left ?
+
+If I'm running a race and I pass the person
+in 2nd place, what position am I ?
+
+What gets wetter the more it dries ?
+
+Can a man living in South Australia be buried in Queensland ?
+
+How far can a dog run into a forest ?
+
+
+*** 2016-T1 - v4COIT11134StandardExam2016T1.pdf
+
+Q5
+public String calculateGrade()
+{
+   if (total < 50)
+      return "Fail";
+   else
+      return "Pass";
+}
+
 
 EOF.
